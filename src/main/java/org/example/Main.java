@@ -110,6 +110,7 @@ public class Main {
             System.out.println(sum);
             System.out.println(moneyOfOne);
             System.out.println(moneyOneNew);
+
             System.out.println(sum%7);
 
         } catch (JAXBException e) {
