@@ -16,20 +16,20 @@ public class Main {
     private static double sumWallet;
     private static double moneyOfOne;
     public static void marshalBank() throws JAXBException, IOException {
-//        List<Person> myPerson = new ArrayList<Person>();
-//        myPerson.add(new Person("Михаил", 1.34));
-//        myPerson.add(new Person("Татьяна", 2.12));
-//        myPerson.add(new Person("Игорь", 3.44));
-//        myPerson.add(new Person("Александр", 5.15));
-//        myPerson.add(new Person("Георгий", 5.15));
-//        myPerson.add(new Person("Оля", 1.43));
-//        myPerson.add(new Person("Светлана", 4.25));
-//        Bank bank = new Bank(10.10, myPerson);
-//
-//        JAXBContext context = JAXBContext.newInstance(Bank.class);
-//        Marshaller marshaller = context.createMarshaller();
-//        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-//        marshaller.marshal(bank, new File("./bank.xml"));
+        List<Person> myPerson = new ArrayList<Person>();
+        myPerson.add(new Person("Михаил", 1.34));
+        myPerson.add(new Person("Татьяна", 2.12));
+        myPerson.add(new Person("Игорь", 3.44));
+        myPerson.add(new Person("Александр", 5.15));
+        myPerson.add(new Person("Георгий", 5.15));
+        myPerson.add(new Person("Оля", 1.43));
+        myPerson.add(new Person("Светлана", 4.25));
+        Bank bank = new Bank(10.10, myPerson);
+
+        JAXBContext context = JAXBContext.newInstance(Bank.class);
+        Marshaller marshaller = context.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        marshaller.marshal(bank, new File("./bank.xml"));
     }
 
     public static void marshalTotal(Total total) throws JAXBException, IOException {
